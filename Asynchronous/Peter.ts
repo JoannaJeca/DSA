@@ -178,3 +178,15 @@ const prompt = PromptSync();
 // let systemuter : string;
 // let player: string
 
+import ProgressBar from 'progress'
+
+const bar = new ProgressBar(":bar :percent :etas :current/:total", {total:10})
+
+const time = setInterval(()=>{
+    bar.tick()
+    if(bar.complete){
+        console.log("process completed");
+        clearInterval(time)
+        
+    }
+},300)
