@@ -44,14 +44,14 @@ console.log()
 console.log()
 
 console.time("addUp")
-console.log(addUp2(7));
+// console.log(addUp2(7));
 console.timeEnd("addUp")
 console.log()
 console.log()
 
 
 console.time("addUp")
-console.log(addUp3(6));
+// console.log(addUp3(6));
 console.timeEnd("addUp")
 
 //Four ways to carry out a reverse function.
@@ -62,7 +62,9 @@ const reverser =(str:string)=>{
     return spliter
 
 }
-// console.log(reverser("holla"))
+console.time()
+console.log(reverser("holla"))
+console.timeEnd('reverser')
 
 //step 2
 
@@ -74,7 +76,9 @@ const reverser2 = (str:string)=>{
     }
     return strinng
 }
-// console.log(reverser2("hello"))
+console.time()
+console.log(reverser2("hello"))
+console.timeEnd('reverser')
 
 //step 3
 const reverser3 =(str:string)=>{
@@ -85,7 +89,7 @@ const reverser3 =(str:string)=>{
         return (str.substr(1)) + str.charAt(0)
     }
 }
-// console.log(reverser3("heelo"));
+console.log(reverser3("heelo"));
 
 
 
